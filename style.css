@@ -1,22 +1,30 @@
-img {
-  color: rgb(245, 245, 245);
-  background-color: rgb(245, 245, 245);
+body {
+   font-family: "Poppins", sans-serif;
+   background-color: rgb(245, 245, 245);
+   margin: 0;
+   padding: 0;
 }
+
+img {
+   color: rgb(245, 245, 245);
+   background-color: rgb(245, 245, 245);
+}
+
 h3 {
    color: rgb(240, 96, 77);
-   font-family: "Poppins";
    font-size: 20px;
    font-weight: 700;
    line-height: 32px;
    text-align: left;
 }
+
 .tudo {
    max-width: 1280px;
    margin: 0 auto;
    position: relative;
    padding: 0 20px;
-   
 }
+
 .final {
    display: flex;
    justify-content: space-between;
@@ -24,82 +32,86 @@ h3 {
    width: 100%;
    background-color: rgb(245, 245, 245);
 }
+
 .final-topo {
    display: flex;
    gap: 20px;
    justify-content: flex-end;
    width: 100%;
-   
 }
-.vai {
-   margin-left: 10px;
-}
+
 .espaço {
    margin: 10px;
    width: 297px;
    height: 297px;
 }
+
 h1 {
-   font-family: "Poppins";
    font-size: 32px;
    font-weight: 700;
    line-height: 40px;
    text-align: left;
 }
+
 p {
-   font-family: "Poppins";
    font-size: 14px;
    font-weight: 400;
    line-height: 23.8px;
    text-align: left;
 }
+
 .radius {
    border-radius: 100px;
    margin-left: 10px;
 }
+
 span {
-   font-family: "Poppins";
    font-size: 14px;
    font-weight: 400;
    line-height: 23.8px;
    text-align: left;
 }
+
 .topo {
    display: flex;
    align-items: center;
    gap: 10px;
    background-color: rgb(245, 245, 245);
 }
+
 .meio {
    display: flex;
    align-items: center;
    gap: 20px;
    background-color: rgb(245, 245, 245);
-   height: 240px;
+   padding: 20px;
+   width: 100%;
 }
+
 .imatex {
-display: flex;
-align-items: center;
-width: 592px;
-height: 176px;
-gap: 32px;
+   display: flex;
+   align-items: center;
+   width: 592px;
+   gap: 32px;
 }
 
 .iconees {
-display: flex;
-flex-direction: column;
-margin-bottom: 50px;
-margin-left: 400px;
-width: 280px;
-height: 24px;
-}
-.iconess div {
    display: flex;
+   flex-direction: column;
+   margin-left: auto;
+   margin-right: 0;
+   width: 280px;
 }
+
 .iguais {
    display: flex;
-margin-bottom: 10px;
-gap: 10px;
+   margin-bottom: 10px;
+   gap: 10px;
+}
+.textinhos {
+max-width: 384px;
+
+
 }
 .fotos {
    display: flex;
@@ -107,145 +119,95 @@ gap: 10px;
    justify-content: center;
    align-items: center;
 }
+
 .fotos img {
    width: 297px;
    height: 297px;
    object-fit: cover;
-   margin: 10px auto;
+   margin: 10px;
 }
+
 .content {
    background-color: white;
 }
+
 .w {
    border-radius: 100px;
    margin-right: 10px;
 }
-.body {
-   font-family: "Poppins";
-}
+
+/* Media Queries */
 @media (max-width: 768px) {
-   .a, .b {
-      display: none;
-   }
    .final-topo {
-       justify-content: right;
-   }
-   .tudo {
-       padding: 0 10px;
-   }
-   .perfil {
-       flex-direction: column;
-       align-items: center;
-   }
-   .perfil img {
-      display: flex;
-     align-self: start;
-       width: 25vw;
-       max-width: 150px;
-   }
-   .detalhes h1 {
-       font-size: 5vw;
-   }
-   .espaço {
-       width: calc(50% - 20px);
-   }
+      justify-content: right;
+  }
+  .tudo {
+      padding: 0 10px;
+  }
+  .meio {
+      flex-direction: column;
+      align-items: flex-start; 
+      height: auto;
+  }
+  .iconees {
+      width: 100%;
+      margin-top: 20px;
+      align-items: flex-start;
+  }
+  .imatex {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .imagem {
+   display: flex;
+     align-items: flex-start;
+     
+  }
+  img.radius {
+     margin-left: 0; 
+  }
+  h1, p {
+      margin-left: -10px; 
+      word-wrap: break-word; 
+      width: calc(100% - 40px); 
+  }
+  .a, .b {
+     display: none;
+  }
 }
+
 @media (max-width: 480px) {
    .final-topo {
        flex-direction: column;
        align-items: center;
    }
-   .espaço {
-       width: 100%;
-   }
-   .infos {
-       position: relative;
-       right: auto;
-   }
    .final-topo span {
        display: none;
    }
 }
+
 @media (max-width: 360px) {
    .imatex {
-flex-direction: column;
+       flex-direction: column;
    }
    .iconees {
-      display: flex;
-      flex-direction: column;
+       display: flex;
+       flex-direction: column;
    }
    .meio {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+       flex-direction: column;
+       align-items: flex-start;
    }
    .meio img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      margin-bottom: 20px;
-      align-self: flex-start; 
+       width: 100%;
+       height: auto;
+       object-fit: cover;
+       margin-bottom: 20px;
+       align-self: flex-start;
    }
    .meio p {
-      width: 100%;
-      margin-bottom: 10px;
-   }
-   .infos {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-top: 10px;
-   }
-   .topo {
-       flex-direction: column;
-       align-items: center;
-   }
-   .final-topo {
-       flex-direction: column;
-       text-align: center;
-   }
-   .perfil {
-       flex-direction: column;
-       align-items: center;
-   }
-   .detalhes h1 {
-       font-size: 24px;
-   }
-   .espaço {
-       width: 328px;
-       height: 328px;
-   }
-   .final p {
-       text-align: center;
-   }
-   .final-topo span {
-       display: none;
-   }
-   .perfil img {
-       order: 1;
-   }
-   .infos img {
-       max-width: 100%;
-       height: auto;
-   }
-   .meio {
-      flex-direction: column;
-   }
-   .infos {
-      order: 3;
-      margin-top: 10px;
-   }
-   .infos div {
-      margin-bottom: 10px;
-   }
-   .infos img {
-      max-width: 20px;
-      height: auto;
-   }
-   .infos span {
-      font-size: 14px;
-      margin-left: 8px;
+       width: 100%;
+       margin-bottom: 10px;
    }
    .fotos {
        flex-direction: column;
@@ -255,5 +217,4 @@ flex-direction: column;
        height: 328px;
        margin-bottom: 20px;
    }
-   
 }
